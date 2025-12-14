@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color: #000000;
+  line-height: 1.2;
+  font-size: 20pt;
+  font-family: 'Dongle', sans-serif;
+}
+
+.rubik-bubbles-regular {
+  font-family: "Rubik Bubbles", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dongle-regular {
+  font-family: "Dongle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*universal header*/
+
+nav {
+  background-color: #e49e2f;
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  justify-content: space-around;
+  align-items: center;
+  top: 0px;
+  padding: 0.5em;
+  z-index: 2;
+}
+
+.title {
+  font-family: "Rubik Bubbles", sans-serif;
+  font-size: 1em;
+}
+
+.logo img {
+  max-width: 10vw;
+  width: 10vw;
+  height: auto;
+  display: block;
+  animation: sway 3s ease-in-out infinite;
+}
+
+@keyframes sway {
+  0% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+  100% { transform: rotate(-5deg); }
+}
+
+.navigation ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0.25em;
+  gap: 0.3em;
+  list-style: none;
+}
+
+.navigation ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 0.2em;
+}
+
+.navigation ul li a:hover {
+  color: #b8252d
+}
+
+/*homepage*/
+
+.hometitle {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.hometitle h1 {
+  font-family: "Rubik Bubbles", sans-serif;
+  font-size: 2.5em;
+  color: #000000;
+  margin-bottom: 0.2em;
+}
+
+.hometitle h2 {
+  font-size: 1.2em;
+  color: #b8252d;
+}
+
+.pictures {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin: 2em 0em;
+}
+
+.pictures img {
+  width: 30%;
+  aspect-ratio: 4/3; 
+  object-fit: cover;
+}
+
+.details {
+  padding: 0em 2em;
+  margin-bottom: 2em;
+}
+
+.details h3 {
+  font-family: "Rubik Bubbles", sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.details p {
+  margin-bottom: 0.3em;
+}
+
+/*aboutpage*/
+
+.abouttitle {
+  text-align: center;
+  margin: 2em 0em;
+}
+
+.abouttitle h1 {
+  font-family: "Rubik Bubbles", sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 0.2em;
+}
+
+.abouttitle h2 {
+  font-size: 1.2em;
+  color: #b8252d;
+}
+
+.about {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 2em;
+  margin-bottom: 2em;
+}
+
+.sosapics {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.sosapics img {
+  width: 50%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.biography {
+  padding: 0 2em;
+  line-height: 1.4em;
+}
+
+/*itinerarypage*/
+
+.itinerarytitle {
+  text-align: center;
+  margin: 2em 0em;
+}
+
+.itinerarytitle h1 {
+  font-family: "Rubik Bubbles", sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 0.2em;
+}
+
+.itinerarytitle h2 {
+  font-size: 1.2em;
+  color: #b8252d;
+}
+
+.events {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  padding: 0em 2em;
+  margin-bottom: 2em;
+}
+
+.event {
+  background-color: #e49e2f;
+  border: 0.8em solid #f4cd30;
+  padding: 1em;
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+.event h3 {
+  font-family: "Rubik Bubbles", sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.event p {
+  line-height: 1.4em;
+}
+
+/*universal footer*/
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1em 2em;
+  font-family: 'Dongle', sans-serif;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+footer a:hover {
+  color: #d983b0;
+}
+
+.sources ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sources ul li {
+  margin: 0.2em 0em;
+}
+
+@media (max-width: 480px) {
+  
+/*universal header*/
+  
+  nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .title {
+  font-family: "Rubik Bubbles", sans-serif;
+  font-size: 0.7em;
+  }
+  
+  .logo img {
+    max-width: 50vw;
+    width: 30vw;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 0.2em;
+  }
+
+  .navigation ul li {
+    margin: 0; 
+    padding: 0; 
+  }
+  
+  .navigation ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 0.9em;
+  padding: 0.1em;
+  }
+
+/*homepage*/
+  
+  .pictures {
+    flex-direction: row;
+    gap: 0.5em;
+  }
+
+  .pictures img {
+    width: 30%;
+    aspect-ratio: 2/4; 
+  }
+
+  .details {
+    padding: 0 5%;
+  }
+
+  .hometitle h1 {
+    font-size: 2em;
+  }
+
+  .hometitle h2 {
+    font-size: 1em;
+  }
+
+/*aboutpage*/
+  
+  .abouttitle h1 {
+    font-size: 2em;
+  }
+
+  .abouttitle h2 {
+    font-size: 1em;
+  }
+    
+  .sosapics {
+    aspect-ratio: 5/4;
+  }
+  
+  .biography {
+  padding: 0 1em;
+  line-height: 1.4em;
+  }
+
+/*itinerarypage*/
+  
+  .itinerarytitle h1 {
+    font-size: 2em;
+  }
+
+  .itinerarytitle h2 {
+    font-size: 1em;
+  }
+  
+/*universal footer*/
+
+  footer {
+  padding: 1em;
+  }
+}
